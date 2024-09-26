@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
-import TasksList from "./pages/tasksList.tsx";
+import TaskRouting from "./pages/TaskRouting.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 
 // Define Routes
@@ -17,9 +17,8 @@ const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tasks-list",
-    element: <TasksList />,
-    errorElement: <ErrorPage />,
+    path: "url-params-routes",
+    element: <TaskRouting />,
   },
 ]);
 

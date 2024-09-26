@@ -1,21 +1,24 @@
-import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Navbar from "./components/navbar";
-import { Button } from "./components/ui/button";
+import TasksList from "./pages/tasksList";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen w-full flex-col items-center justify-center gap-y-5">
-        <h1 className="text-3xl font-bold underline">Hello world...!</h1>
+      <div className="flex min-h-[50vh] w-full flex-col items-center justify-center gap-y-5 border-b">
+        <h1 className="text-3xl font-bold underline md:text-5xl">
+          React.JS Interview Challenge's...!
+        </h1>
 
-        <Link to={"/tasks-list"} className="text-base text-blue-700 underline">
-          Go to Tasks List Page
-        </Link>
-
-        <Button>Button</Button>
+        <p className="mx-auto text-center text-lg font-medium text-muted-foreground md:text-xl lg:max-w-[30vw]">
+          Below is a list of React code challenges that are commonly asked in
+          interviews and could potentially come up.
+        </p>
       </div>
+      <Outlet />
+      <TasksList />
     </>
   );
 }
