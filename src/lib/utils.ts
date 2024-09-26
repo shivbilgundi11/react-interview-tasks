@@ -14,6 +14,13 @@ export const tasksList = [
       "This challenge tests your ability to work with React Router for dynamic routing and URL manipulation without page navigation. The goal is to keep the user on the same page but reflect the selected dropdown option in the URL, enhancing usability and bookmarkability without unnecessary page reloads.",
     path: "url-params-routes",
   },
+  {
+    id: 2,
+    name: "Build a dummy file tree type component in React.",
+    description:
+      "Develop a simple, dummy file tree component that mimics the structure of a file system. This component should display a hierarchical view of folders and files, with expandable/collapsible folders to navigate through the tree. No backend integration is required, just a static representation to demonstrate the UI functionality.",
+    path: "file-tree",
+  },
 ];
 
 export const dropDownLinks = [

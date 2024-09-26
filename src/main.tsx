@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
+import FileTree from "./pages/file-tree.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
@@ -24,6 +25,10 @@ const routes = createBrowserRouter([
   {
     path: "url-params-routes/examples",
     element: <RouteURLParams />,
+  },
+  {
+    path: "file-tree",
+    element: <FileTree />,
   },
 ]);
 
