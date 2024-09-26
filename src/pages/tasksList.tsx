@@ -1,6 +1,15 @@
 import { FaTasks } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { tasksList } from "@/lib/utils";
+
 export default function TasksList() {
   return (
     <>
@@ -9,7 +18,28 @@ export default function TasksList() {
           <FaTasks /> Tasks List's
         </h1>
 
-        <Link to={"url-params-routes"}>URL Params Routes</Link>
+        <div className="container h-auto w-full">
+          {tasksList &&
+            tasksList.map(({ id, name, description, path }) => {
+              return (
+                <Accordion type="single" collapsible key={id}>
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger>
+                      {id}. {name}
+                    </AccordionTrigger>
+                    <AccordionContent>{description}</AccordionContent>
+                    <AccordionContent>
+                      <Link to={path}>
+                        <Button variant={"link"} className="px-0">
+                          Learn more
+                        </Button>
+                      </Link>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              );
+            })}
+        </div>
       </div>
     </>
   );
