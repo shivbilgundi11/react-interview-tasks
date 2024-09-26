@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-[50vh] w-full flex-col items-center justify-center gap-y-5 border-b">
+      <div className="container flex min-h-[50vh] w-full flex-col items-center justify-center gap-y-5 border-b">
         <h1 className="text-3xl font-bold underline md:text-5xl">
           React.JS Interview Challenge's...!
         </h1>

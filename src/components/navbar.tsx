@@ -9,9 +9,11 @@ export default function Navbar() {
     <>
       <header className="flex h-12 w-full items-center justify-center">
         <nav className="container flex h-full w-full items-center justify-between border-b py-4">
-          <h1 className="text-xl font-semibold italic">
-            <span className="text-purple-500">i</span>Tasks
-          </h1>
+          <Link to={"/"}>
+            <h1 className="text-xl font-semibold italic">
+              <span className="text-purple-500">i</span>Tasks
+            </h1>
+          </Link>
 
           <div className="flex items-center gap-x-2">
             <ToggleTheme />
