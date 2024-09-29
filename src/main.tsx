@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
 import FileTree from "./pages/file-tree.tsx";
+import HexCodeInput from "./pages/hex-code-input.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
   {
     path: "file-tree",
     element: <FileTree />,
+  },
+  {
+    path: "hex-code-input",
+    element: <HexCodeInput />,
   },
 ]);
 

@@ -21,6 +21,13 @@ export const tasksList = [
       "Develop a simple, dummy file tree component that mimics the structure of a file system. This component should display a hierarchical view of folders and files, with expandable/collapsible folders to navigate through the tree. No backend integration is required, just a static representation to demonstrate the UI functionality.",
     path: "file-tree",
   },
+  {
+    id: 3,
+    name: "React Input Border Color Based on Hex Code Input",
+    description:
+      "Create a React component with an input field that changes its border color based on the hex color code typed by the user. The input should accept a combination of letters and numbers. However, if the input consists only of letters, the border color shouldn't change. If it contains a mix of letters and numbers or is entirely numeric, update the border color according to the input.",
+    path: "hex-code-input",
+  },
 ];
 
 export const dropDownLinks = [
