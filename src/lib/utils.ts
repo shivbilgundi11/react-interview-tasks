@@ -35,6 +35,13 @@ export const tasksList = [
       "Write a React component that renders a search input field. Implement debouncing logic so that the search query is only sent to the API after the user stops typing for 300ms.",
     path: "debounced-search",
   },
+  {
+    id: 5,
+    name: "Implement Infinite Scroll (API Fetching Challenge)",
+    description:
+      "Create an infinite scroll component that loads more data when the user scrolls to the bottom of the page.",
+    path: "infinite-content-scroll",
+  },
 ];
 
 export const dropDownLinks = [
