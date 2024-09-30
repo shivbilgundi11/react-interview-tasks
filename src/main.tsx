@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
+import DebouncedSearch from "./pages/debounced-search.tsx";
 import FileTree from "./pages/file-tree.tsx";
 import HexCodeInput from "./pages/hex-code-input.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
@@ -22,6 +23,10 @@ const routes = createBrowserRouter([
   {
     path: "url-params-routes",
     element: <TaskRouting />,
+  },
+  {
+    path: "debounced-search",
+    element: <DebouncedSearch />,
   },
   {
     path: "url-params-routes/examples",

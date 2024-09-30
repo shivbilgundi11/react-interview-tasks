@@ -28,6 +28,13 @@ export const tasksList = [
       "Create a React component with an input field that changes its border color based on the hex color code typed by the user. The input should accept a combination of letters and numbers. However, if the input consists only of letters, the border color shouldn't change. If it contains a mix of letters and numbers or is entirely numeric, update the border color according to the input.",
     path: "hex-code-input",
   },
+  {
+    id: 4,
+    name: "Debounced Search Input (Optimization Challenge).",
+    description:
+      "Write a React component that renders a search input field. Implement debouncing logic so that the search query is only sent to the API after the user stops typing for 300ms.",
+    path: "debounced-search",
+  },
 ];
 
 export const dropDownLinks = [
