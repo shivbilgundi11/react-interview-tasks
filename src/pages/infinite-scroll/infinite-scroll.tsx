@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { ImSpinner2 } from "react-icons/im";
 
-import Navbar from "@/components/navbar";
-
 interface ImgObj {
   id: string;
   url: string;
@@ -55,7 +53,6 @@ export default function InfiniteScroll() {
 
   return (
     <>
-      <Navbar />
       <div className="container min-h-full w-full">
         <h1 className="py-6 text-center text-3xl font-bold underline">
           Implement Infinite Scroll - API Fetching Challenge{" "}

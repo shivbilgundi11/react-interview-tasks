@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import Navbar from "@/components/navbar";
-
 export default function DebouncedSearch() {
   const [inputValue, setInputValue] = useState<string>();
   const [searchedValue, setSearchedValue] = useState<string>();
@@ -18,7 +16,6 @@ export default function DebouncedSearch() {
 
   return (
     <>
-      <Navbar />
       <div className="container min-h-full w-full">
         <h1 className="py-10 text-center text-3xl font-bold underline">
           Debounced Search Input - Optimization Challenge.

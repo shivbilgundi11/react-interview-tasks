@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import Navbar from "@/components/navbar";
-
 export default function HexCodeInput() {
   const [isHexString, setIsHexString] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>("");
@@ -28,7 +26,6 @@ export default function HexCodeInput() {
 
   return (
     <>
-      <Navbar />
       <div className="container min-h-full w-full">
         <h1 className="py-10 text-center text-3xl font-bold underline">
           React Input Border Color Based on Hex Code Input

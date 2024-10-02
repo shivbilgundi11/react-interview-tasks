@@ -12,35 +12,35 @@ export const tasksList = [
     name: "Building a Dynamic Dropdown with URL Update Using React Router",
     description:
       "This challenge tests your ability to work with React Router for dynamic routing and URL manipulation without page navigation. The goal is to keep the user on the same page but reflect the selected dropdown option in the URL, enhancing usability and bookmarkability without unnecessary page reloads.",
-    path: "url-params-routes",
+    path: "tasks/url-params-routes",
   },
   {
     id: 2,
     name: "Build a dummy file tree type component in React.",
     description:
       "Develop a simple, dummy file tree component that mimics the structure of a file system. This component should display a hierarchical view of folders and files, with expandable/collapsible folders to navigate through the tree. No backend integration is required, just a static representation to demonstrate the UI functionality.",
-    path: "file-tree",
+    path: "tasks/file-tree",
   },
   {
     id: 3,
     name: "React Input Border Color Based on Hex Code Input",
     description:
       "Create a React component with an input field that changes its border color based on the hex color code typed by the user. The input should accept a combination of letters and numbers. However, if the input consists only of letters, the border color shouldn't change. If it contains a mix of letters and numbers or is entirely numeric, update the border color according to the input.",
-    path: "hex-code-input",
+    path: "tasks/hex-code-input",
   },
   {
     id: 4,
     name: "Debounced Search Input (Optimization Challenge).",
     description:
       "Write a React component that renders a search input field. Implement debouncing logic so that the search query is only sent to the API after the user stops typing for 300ms.",
-    path: "debounced-search",
+    path: "tasks/debounced-search",
   },
   {
     id: 5,
     name: "Implement Infinite Scroll (API Fetching Challenge)",
     description:
       "Create an infinite scroll component that loads more data when the user scrolls to the bottom of the page.",
-    path: "infinite-content-scroll",
+    path: "tasks/infinite-content-scroll",
   },
 ];
 

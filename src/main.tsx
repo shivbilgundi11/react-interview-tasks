@@ -12,6 +12,7 @@ import HexCodeInput from "./pages/hex-code-input.tsx";
 import InfiniteScroll from "./pages/infinite-scroll/infinite-scroll.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
+import TasksPage from "./pages/tasks-page.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 
 // Define Routes
@@ -22,28 +23,34 @@ const routes = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "url-params-routes",
-    element: <TaskRouting />,
-  },
-  {
-    path: "infinite-content-scroll",
-    element: <InfiniteScroll />,
-  },
-  {
-    path: "debounced-search",
-    element: <DebouncedSearch />,
-  },
-  {
-    path: "url-params-routes/examples",
-    element: <RouteURLParams />,
-  },
-  {
-    path: "file-tree",
-    element: <FileTree />,
-  },
-  {
-    path: "hex-code-input",
-    element: <HexCodeInput />,
+    path: "tasks",
+    element: <TasksPage />,
+    children: [
+      {
+        path: "url-params-routes",
+        element: <TaskRouting />,
+      },
+      {
+        path: "infinite-content-scroll",
+        element: <InfiniteScroll />,
+      },
+      {
+        path: "debounced-search",
+        element: <DebouncedSearch />,
+      },
+      {
+        path: "url-params-routes/examples",
+        element: <RouteURLParams />,
+      },
+      {
+        path: "file-tree",
+        element: <FileTree />,
+      },
+      {
+        path: "hex-code-input",
+        element: <HexCodeInput />,
+      },
+    ],
   },
 ]);
 

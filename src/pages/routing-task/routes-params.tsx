@@ -1,6 +1,5 @@
 import { useSearchParams } from "react-router-dom";
 
-import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { movies, shows } from "@/lib/utils";
 
@@ -17,7 +16,6 @@ export default function RouteURLParams() {
 
   return (
     <>
-      <Navbar />
       <div className="container min-h-full w-full">
         <h1 className="py-6 text-center text-3xl font-bold underline">
           RouteURLParams

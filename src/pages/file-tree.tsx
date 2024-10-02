@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
-import Navbar from "@/components/navbar";
-
 const files = {
   children: [
     {
@@ -88,7 +86,6 @@ function Entry({ depth, entry }: { entry: TreeEntry; depth: number }) {
 export default function FileTree() {
   return (
     <>
-      <Navbar />
       <div className="container min-h-full w-full">
         <h1 className="py-6 text-center text-3xl font-bold underline">
           Build a dummy file tree type component in React.
