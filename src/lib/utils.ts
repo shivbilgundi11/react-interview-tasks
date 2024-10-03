@@ -42,6 +42,13 @@ export const tasksList = [
       "Create an infinite scroll component that loads more data when the user scrolls to the bottom of the page.",
     path: "tasks/infinite-content-scroll",
   },
+  {
+    id: 6,
+    name: "Debounced Search Input - Filter Movie Names",
+    description:
+      "Write a React component that renders a search input field. Implement debouncing logic so that the search query is only used to filter movie names after the user stops typing for 400ms.",
+    path: "tasks/debounced-movies-search",
+  },
 ];
 
 export const dropDownLinks = [
@@ -96,4 +103,33 @@ export const shows = [
   { id: 8, title: "The Crown", year: 2016 },
   { id: 9, title: "The Witcher", year: 2019 },
   { id: 10, title: "Money Heist", year: 2017 },
+];
+
+export const movieList = [
+  { id: 1, name: "The Shawshank Redemption" },
+  { id: 2, name: "The Godfather" },
+  { id: 3, name: "The Dark Knight" },
+  { id: 4, name: "Pulp Fiction" },
+  { id: 5, name: "Schindler’s List" },
+  { id: 6, name: "Forrest Gump" },
+  { id: 7, name: "Fight Club" },
+  { id: 8, name: "Inception" },
+  { id: 9, name: "The Matrix" },
+  { id: 10, name: "Goodfellas" },
+  { id: 11, name: "The Silence of the Lambs" },
+  { id: 12, name: "Se7en" },
+  { id: 13, name: "The Usual Suspects" },
+  { id: 14, name: "Interstellar" },
+  { id: 15, name: "Gladiator" },
+  { id: 16, name: "The Green Mile" },
+  { id: 17, name: "The Prestige" },
+  { id: 18, name: "The Departed" },
+  { id: 19, name: "Memento" },
+  { id: 20, name: "Braveheart" },
+  { id: 21, name: "Django Unchained" },
+  { id: 22, name: "The Wolf of Wall Street" },
+  { id: 23, name: "The Lion King" },
+  { id: 24, name: "Avatar" },
+  { id: 25, name: "Avengers: Endgame" },
+  { id: 26, name: "Titanic" },
 ];

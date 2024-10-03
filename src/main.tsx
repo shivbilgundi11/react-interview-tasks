@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
+import DebouncedFilter from "./pages/debounced-filter.tsx";
 import DebouncedSearch from "./pages/debounced-search.tsx";
 import FileTree from "./pages/file-tree.tsx";
 import HexCodeInput from "./pages/hex-code-input.tsx";
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
       {
         path: "url-params-routes",
         element: <TaskRouting />,
+      },
+      {
+        path: "debounced-movies-search",
+        element: <DebouncedFilter />,
       },
       {
         path: "infinite-content-scroll",
