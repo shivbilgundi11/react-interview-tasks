@@ -49,6 +49,13 @@ export const tasksList = [
       "Write a React component that renders a search input field. Implement debouncing logic so that the search query is only used to filter movie names after the user stops typing for 400ms.",
     path: "tasks/debounced-movies-search",
   },
+  {
+    id: 7,
+    name: "Replace Vowels with # in Input Field",
+    description:
+      "Create a React component that replaces all vowels in the user input (both uppercase and lowercase) with the # symbol in real-time. This transformation should be applied as the user types in the input field.",
+    path: "tasks/replace-vowels",
+  },
 ];
 
 export const dropDownLinks = [

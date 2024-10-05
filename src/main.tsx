@@ -14,6 +14,7 @@ import InfiniteScroll from "./pages/infinite-scroll/infinite-scroll.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
 import TasksPage from "./pages/tasks-page.tsx";
+import VowelsInput from "./pages/vowels-input.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 
 // Define Routes
@@ -27,6 +28,10 @@ const routes = createBrowserRouter([
     path: "tasks",
     element: <TasksPage />,
     children: [
+      {
+        path: "replace-vowels",
+        element: <VowelsInput />,
+      },
       {
         path: "url-params-routes",
         element: <TaskRouting />,
