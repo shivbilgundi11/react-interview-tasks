@@ -13,7 +13,7 @@ import { tasksList } from "@/lib/utils";
 export default function TasksList() {
   return (
     <>
-      <div className="items- container flex min-h-[30vh] w-full flex-col items-center justify-center gap-y-5">
+      <div className="items- container mb-10 flex min-h-[30vh] w-full flex-col items-center justify-center gap-y-5 py-8">
         <h1 className="flex h-full items-center justify-center gap-x-2 self-start text-start text-3xl font-bold">
           <FaTasks /> Tasks List's
         </h1>
