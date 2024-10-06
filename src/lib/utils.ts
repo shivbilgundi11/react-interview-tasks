@@ -56,6 +56,13 @@ export const tasksList = [
       "Create a React component that replaces all vowels in the user input (both uppercase and lowercase) with the # symbol in real-time. This transformation should be applied as the user types in the input field.",
     path: "tasks/replace-vowels",
   },
+  {
+    id: 8,
+    name: "Drag-and-Drop To-Do App in React",
+    description:
+      "Build a simple to-do app using React with drag-and-drop functionality. Users can move tasks between 'Next Up', 'In Progress', and 'Completed' sections.",
+    path: "tasks/drag-and-drop",
+  },
 ];
 
 export const dropDownLinks = [
@@ -140,3 +147,19 @@ export const movieList = [
   { id: 25, name: "Avengers: Endgame" },
   { id: 26, name: "Titanic" },
 ];
+
+// Drag-And-Drop Task Todo's...
+export const todos = {
+  "Next Up": [
+    "Design UI mockups",
+    "Set up project repository",
+    "Write unit test",
+    "Integrate payment gateway",
+  ],
+  "In Progress": ["Develop authentication flow", "Implement responsive design"],
+  Completed: [
+    "Set up CI/CD pipeline",
+    "Conduct code reviews",
+    "Deploy initial version to staging",
+  ],
+};

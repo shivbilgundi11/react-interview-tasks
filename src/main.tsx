@@ -8,6 +8,7 @@ import App from "./App.tsx";
 import ErrorPage from "./error-page.tsx";
 import DebouncedFilter from "./pages/debounced-filter.tsx";
 import DebouncedSearch from "./pages/debounced-search.tsx";
+import DragAndDrop from "./pages/drag-and-drop.tsx";
 import FileTree from "./pages/file-tree.tsx";
 import HexCodeInput from "./pages/hex-code-input.tsx";
 import InfiniteScroll from "./pages/infinite-scroll/infinite-scroll.tsx";
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
     path: "tasks",
     element: <TasksPage />,
     children: [
+      {
+        path: "drag-and-drop",
+        element: <DragAndDrop />,
+      },
       {
         path: "replace-vowels",
         element: <VowelsInput />,
