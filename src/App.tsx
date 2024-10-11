@@ -1,3 +1,4 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Outlet } from "react-router-dom";
 
 import Navbar from "./components/navbar";
@@ -15,6 +16,17 @@ export default function App() {
         <p className="mx-auto text-center text-lg font-medium text-muted-foreground md:text-xl lg:max-w-[30vw]">
           Below is a list of React code challenges that are commonly asked in
           interviews and could potentially come up.
+        </p>
+
+        <p className="inline-flex items-center gap-x-2 font-mono font-medium underline">
+          Source code for all challenges can be found on{" "}
+          <a
+            href="https://github.com/shivbilgundi11/react-interview-tasks"
+            target="_blank"
+            title="GitHub"
+          >
+            <GitHubLogoIcon />
+          </a>
         </p>
       </div>
       <Outlet />
