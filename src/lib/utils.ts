@@ -63,6 +63,13 @@ export const tasksList = [
       "Build a simple to-do app using React with drag-and-drop functionality. Users can move tasks between 'Next Up', 'In Progress', and 'Completed' sections.",
     path: "tasks/drag-and-drop",
   },
+  {
+    id: 9,
+    name: "Traffic Light Simulator with Automatic Signal Transition",
+    description:
+      "Create a simple traffic light simulator using React, where the traffic signal cycles through green, orange, and red lights. Each light should remain active for 2 seconds before transitioning to the next color in the sequence. This project will demonstrate your ability to manage state and use effects to trigger timed updates, simulating a real-world traffic signal system.",
+    path: "tasks/traffic-signal",
+  },
 ];
 
 export const dropDownLinks = [

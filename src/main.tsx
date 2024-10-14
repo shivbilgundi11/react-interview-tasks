@@ -15,6 +15,7 @@ import InfiniteScroll from "./pages/infinite-scroll/infinite-scroll.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
 import TasksPage from "./pages/tasks-page.tsx";
+import TrafficSignal from "./pages/traffic-signal.tsx";
 import VowelsInput from "./pages/vowels-input.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
     path: "tasks",
     element: <TasksPage />,
     children: [
+      {
+        path: "traffic-signal",
+        element: <TrafficSignal />,
+      },
       {
         path: "drag-and-drop",
         element: <DragAndDrop />,
