@@ -1,34 +1,37 @@
 import "./index.css";
-
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
-import ErrorPage from "./error-page.tsx";
 import DebouncedFilter from "./pages/debounced-filter.tsx";
 import DebouncedSearch from "./pages/debounced-search.tsx";
 import DragAndDrop from "./pages/drag-and-drop.tsx";
 import FileTree from "./pages/file-tree.tsx";
 import HexCodeInput from "./pages/hex-code-input.tsx";
+import Home from "./pages/home.tsx";
 import InfiniteScroll from "./pages/infinite-scroll/infinite-scroll.tsx";
 import RouteURLParams from "./pages/routing-task/routes-params.tsx";
 import TaskRouting from "./pages/TaskRouting.tsx";
-import TasksPage from "./pages/tasks-page.tsx";
+import TasksListingPage from "./pages/tasks-listing-page.tsx";
 import TrafficSignal from "./pages/traffic-signal.tsx";
 import VowelsInput from "./pages/vowels-input.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
+import Notfound from "./pages/not-found.tsx";
 
-// Define Routes
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
+    element: <Home />,
+    errorElement: <Notfound />,
   },
   {
-    path: "tasks",
-    element: <TasksPage />,
+    path: "/tasks",
+    element: <TasksListingPage />,
+  },
+  {
+    path: "/tasks/:taskName",
+    element: <App />,
     children: [
       {
         path: "traffic-signal",
@@ -71,6 +74,10 @@ const routes = createBrowserRouter([
         element: <HexCodeInput />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Notfound />,
   },
 ]);
 
