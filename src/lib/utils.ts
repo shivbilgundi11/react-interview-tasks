@@ -70,6 +70,13 @@ export const tasksList = [
       "Create a simple traffic light simulator using React, where the traffic signal cycles through green, orange, and red lights. Each light should remain active for 2 seconds before transitioning to the next color in the sequence. This project will demonstrate your ability to manage state and use effects to trigger timed updates, simulating a real-world traffic signal system.",
     path: "tasks/traffic-signal",
   },
+  {
+    id: 10,
+    name: "OTP Input Form with Custom Length",
+    description:
+      "Create a React component that renders an OTP (One-Time Password) input form. The component should accept a prop to specify the length of the OTP (defaulting to 6 if not provided). The form should display the appropriate number of input fields based on the specified OTP length, allowing users to enter their OTP securely.",
+    path: "tasks/otp-form",
+  },
 ];
 
 export const dropDownLinks = [
