@@ -18,6 +18,7 @@ import TrafficSignal from "./pages/traffic-signal.tsx";
 import VowelsInput from "./pages/vowels-input.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 import Notfound from "./pages/not-found.tsx";
+import OTP from "./pages/otp-form.tsx";
 
 const routes = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const routes = createBrowserRouter([
       {
         path: "hex-code-input",
         element: <HexCodeInput />,
+      },
+      {
+        path: "otp-form",
+        element: <OTP />,
       },
     ],
   },
