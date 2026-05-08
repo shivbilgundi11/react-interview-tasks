@@ -59,7 +59,7 @@ export default function OTP({ otplength = 6 }: OTPProps) {
                 type="text"
                 key={index}
                 value={val}
-                className="h-12 w-12 text-center text-2xl text-black"
+                className="text h-12 w-12 rounded-md border border-black bg-none text-center text-2xl text-black"
                 onKeyDown={(e) => handleKeyDown(e, index)}
                 onChange={() => {}}
                 ref={(currInput) => (fieldsRefs.current[index] = currInput)}
