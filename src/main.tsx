@@ -19,6 +19,7 @@ import VowelsInput from "./pages/vowels-input.tsx";
 import { ThemeProvider } from "./providers/theme-provider.tsx";
 import Notfound from "./pages/not-found.tsx";
 import OTP from "./pages/otp-form.tsx";
+import Virtaulized from "./components/virtaulized.tsx";
 
 const routes = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ const routes = createBrowserRouter([
       {
         path: "otp-form",
         element: <OTP />,
+      },
+      {
+        path: "virtualized-list",
+        element: <Virtaulized />,
       },
     ],
   },

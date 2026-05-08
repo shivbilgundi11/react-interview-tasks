@@ -77,6 +77,13 @@ export const tasksList = [
       "Create a React component that renders an OTP (One-Time Password) input form. The component should accept a prop to specify the length of the OTP (defaulting to 6 if not provided). The form should display the appropriate number of input fields based on the specified OTP length, allowing users to enter their OTP securely.",
     path: "tasks/otp-form",
   },
+  {
+    id: 11,
+    name: "List Virtaulisation",
+    description:
+      "Long list of data or items that can stutter the UI for cause performance issues. This can be solved by virtaulizing the list for the window, so that only visible area size items are shown and dynamically new items are added once the user scrolls down or up.",
+    path: "tasks/virtualized-list",
+  },
 ];
 
 export const dropDownLinks = [
@@ -177,3 +184,5 @@ export const todos = {
     "Deploy initial version to staging",
   ],
 };
+
+export const list = Array.from({ length: 100000 }, (_, index) => index + 1);
