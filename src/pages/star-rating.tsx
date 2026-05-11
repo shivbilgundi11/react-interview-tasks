@@ -6,6 +6,8 @@ export default function StarRating() {
   const [starValue, setStarValue] = useState<number>(0);
   const [hoverValue, setHoverValue] = useState<number>(0);
 
+  const activeStars = hoverValue || starValue;
+
   return (
     <div className="container mx-auto mt-5 flex min-h-full w-full flex-col items-center justify-center gap-x-3 gap-y-5 border p-5">
       <h1>Star Rating</h1>
@@ -15,11 +17,7 @@ export default function StarRating() {
           return (
             <span
               key={i}
-              className={`cursor-pointer ${
-                (hoverValue === 0 && i < starValue) || i < hoverValue
-                  ? "gold"
-                  : ""
-              }`}
+              className={`cursor-pointer ${i < activeStars ? "gold" : ""}`}
               onClick={() => setStarValue(i + 1)}
               onMouseEnter={() => setHoverValue(i + 1)}
               onMouseLeave={() => setHoverValue(0)}
