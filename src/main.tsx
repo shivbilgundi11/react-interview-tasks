@@ -20,6 +20,7 @@ import { ThemeProvider } from "./providers/theme-provider.tsx";
 import Notfound from "./pages/not-found.tsx";
 import OTP from "./pages/otp-form.tsx";
 import Virtaulized from "./components/virtaulized.tsx";
+import StarRating from "./pages/star-rating.tsx";
 
 const routes = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ const routes = createBrowserRouter([
       {
         path: "virtualized-list",
         element: <Virtaulized />,
+      },
+      {
+        path: "star-rating",
+        element: <StarRating />,
       },
     ],
   },

@@ -84,6 +84,13 @@ export const tasksList = [
       "Long list of data or items that can stutter the UI for cause performance issues. This can be solved by virtaulizing the list for the window, so that only visible area size items are shown and dynamically new items are added once the user scrolls down or up.",
     path: "tasks/virtualized-list",
   },
+  {
+    id: 12,
+    name: "Star Rating",
+    description:
+      "Rating UI that renders a bunch of star icons and lets user select a range based on their liking of the service.",
+    path: "tasks/star-rating",
+  },
 ];
 
 export const dropDownLinks = [
